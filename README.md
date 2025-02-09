@@ -1,7 +1,7 @@
-# 2025-ITELEC2-LAB004
+# 2025-ITELEC2-WK02S01E02
 Week 02 - Python Variables, Operators and I/O Statements
 
-Laboratory # 04 - Guided Coding Exercise: Input, Output, and Text Formatting in Python
+Exercise # 02 - Guided Coding Exercise: Input, Output, and Text Formatting in Python
 
 ## **Instructions**
 
@@ -77,7 +77,7 @@ Only perform this if this is the first time you will setup your Git Environment
 
 ### **Step 3: Complete the Assignment**
 
-**Laboratory # 04 - Guided Coding Exercise: Input, Output, and Text Formatting in Python**
+**Exercise # 02 - Guided Coding Exercise: Input, Output, and Text Formatting in Python**
 
    **Objective:**
       1. Get input from the user using the `input()` function.
@@ -99,22 +99,11 @@ Integer: 123
 Decimal: 3.14
 String: Hello, Python!
 ```
-*Note: The decimal number should be formatted to two decimal places in both output styles.*
       
    **Notable Observations (to be discussed after completing the exercise):**
-   - Data Type Conversion: The input() function returns a string; therefore, it is essential to convert the input to the appropriate type (using int() for integers and float() for decimals). Failing to do so would prevent arithmetic operations or correct formatting.
-   - Old-Style Formatting vs. f-Strings:
-      - Old-style formatting uses specifiers such as %d (integer), %.2f (float with two decimal places), and %s (string).
-      - f-Strings, introduced in Python 3.6, provide a more readable and flexible way to format strings, including inline arithmetic and formatting.
-   - Formatting Specifiers: The specifier %.2f rounds the decimal number to two decimal places, ensuring that the output is neat and consistent.
-   - User Experience: Clear prompts and formatted outputs enhance the user experience and reduce the likelihood of input errors.
-
-   **Python Best Practices**
-   - Input Validation: Always validate and convert user inputs to the correct data types to prevent runtime errors.
-   - Consistent Formatting: Use consistent formatting practices throughout your code. While old-style formatting is still supported, favor modern f-strings for clarity and brevity.
-   - Readable Code: Include clear prompts and descriptive variable names to improve code readability.
-   - Commenting: Add comments where necessary to explain the purpose of each code section, especially when performing type conversions and formatting.
-   - Modular Code: Structure your code in logical blocks (input, processing, output) to make it easier to maintain and update.
+   - The `input()` function always returns a string, even if the user enters a number. You must convert it to the correct type.
+   - Old-style string formatting (%) is one way to format output. F-strings (introduced later in the exercise) are the more modern and often preferred way.
+   - Formatting specifiers control how the values are displayed (e.g., number of decimal places).
 
    **Step-by-Step Instructions:**
 
@@ -161,14 +150,9 @@ print(f"Decimal: {user_decimal:.2f}")  # Format decimal to two places
 print(f"String: {user_text}")
 ```
 
-   8. Run the code:
-   - Save the file and execute your script by running:
-   ```bash
-   python exercise_02.py
-   ```
-   - Verify that your output matches the desired output.
-
-   9. Discussion (Notable Observations):  
+   8. Run the code: Execute your Python code.
+   9. Observe the output: Compare your output with the "Desired Output" shown above.
+   10. Discussion (Notable Observations):  
    - Why is it essential to convert the input to the correct data type? What would happen if you tried to perform arithmetic operations on the string input directly?
    - Explain the difference between %d, %.2f, and %s in old-style formatting.
    - Explain how f-strings work. Why are they often preferred over old-style formatting? How do you format the decimal places in an f-string?
